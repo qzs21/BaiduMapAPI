@@ -1,0 +1,3 @@
+platform :ios, "6.0"
+
+pod 'BaiduMapAPI-Extend', :podspec => '../BaiduMapAPI-Extend.podspec'
