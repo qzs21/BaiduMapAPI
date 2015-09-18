@@ -9,7 +9,6 @@ Pod::Spec.new do |s|
     :git => 'https://github.com/qzs21/BaiduMapAPI.git',
     :tag => s.version
   }
-  s.source = { "/Users/steven/developer/lib/BaiduMapAPI" }
   s.ios.deployment_target = '5.0'
   s.ios.dependency 'BaiduMapAPI', s.version
   s.resources = 'BaiduMapAPI-Extend/*.{h,m,mm}'
