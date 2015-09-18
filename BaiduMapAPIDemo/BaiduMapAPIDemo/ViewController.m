@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import <BaiduMapAPI/BMapKit.h>
-//#import <BaiduMapAPI/BMKMapView+extend.h>
+#import <BaiduMapAPI-Extend/BMKMapView+extend.h>
 
 @interface ViewController () <BMKMapViewDelegate>
 @property (nonatomic, strong) BMKMapView * mapView;
@@ -22,7 +22,7 @@
     self.mapView = [[BMKMapView alloc] init];
     [self.view addSubview:self.mapView];
     
-   // [self.mapView removeBaiduLogo];
+    [self.mapView removeBaiduLogo];
 }
 
 - (void)viewWillLayoutSubviews
