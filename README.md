@@ -11,6 +11,11 @@
 pod 'BaiduMapAPI'
 ```
 
+引入百度地图扩展功能:
+```ruby
+pod 'BaiduMapAPI-Extend'
+```
+
 # BMKMapView Extend
 ```objective-c
 /**
@@ -52,3 +57,11 @@ pod 'BaiduMapAPI'
 
 # Official documents
 [http://developer.baidu.com/map/index.php?title=iossdk](http://developer.baidu.com/map/index.php?title=iossdk)
+
+
+# 提交更新到CocoaPods说明
+提交或者校验BaiduMapAPI-Extend.podspec文件时，使用下面的命令忽略包中包含二进制文件依赖时的错误（[问题出处](https://github.com/CocoaPods/CocoaPods/issues/3194)）
+
+```
+pod trunk push BaiduMapAPI-Extend.podspec --verbose --use-libraries
+```
